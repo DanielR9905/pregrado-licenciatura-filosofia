@@ -1,0 +1,573 @@
+/**
+ * Theme Name: Pregrado filosofía
+ * Theme URI: http://crie.edu.co/
+ * Author: Centro de Recusos Informáticos y Educativos
+ * Author URI: https://crie.utp.edu.co
+ * Description: Tema desarrollado para programas de la Universidad Tecnológica de Pereira desde el centro de recusos informáticos y educativos
+ * Version: 1.0
+ * License: UTP
+ * License URI: https://www.utp.edu.co
+ * Text Domain: utp
+ * Domain Path:
+ * Tags: reacreditación, Centro, Recusos, Informáticos, Educativos, facultades, institucional, industrial, mecanica, ingenierías, ingenierias, artes, musica, música, agro, agroindustria, ciencias, ambientales, ambiental, educación, empresariales, salud, facultad, facultades, básicas, basicas, tecnología, tecnologia, agrarias, rudecolombia, doctorado
+ * Text Domain: Universidad Tecnológica de Pereira, Doctorado en Ciencias de la Educación
+ */
+
+ @font-face {
+    font-family: 'Myriad Pro Cond';
+    src: url('fonts/myriad-pro-Cond.eot');
+    src: url('fonts/myriad-pro-Cond.eot?#iefix') format('embedded-opentype'), url('fonts/myriad-pro-Cond.woff') format('woff'), url('fonts/myriad-pro-Cond.ttf') format('truetype'), url('fonts/myriad-pro-Cond.svg#Impact') format('svg');
+}
+
+@font-face {
+    font-family: 'Myriad Pro Cond It';
+    src: url('fonts/myriad-pro-CondIT.eot');
+    src: url('fonts/myriad-pro-CondIT.eot?#iefix') format('embedded-opentype'), url('fonts/myriad-pro-CondIT.woff') format('woff'), url('fonts/myriad-pro-CondIT.ttf') format('truetype'), url('fonts/myriad-pro-CondIT.svg#Impact') format('svg');
+}
+
+@font-face {
+    font-family: 'Oswald';
+    src: url('fonts/Oswald-VariableFont_wght.ttf');
+}
+
+html {
+    margin: 0 !important;
+}
+
+ul.accordion-collapse {
+    list-style: none;
+}
+
+/* body {
+    background-image: url("img/background.png");
+} */
+
+#saltar a {
+    position:absolute;
+    left:-10000px;
+    top:auto;
+    width:1px;
+    height:1px;
+    overflow:hidden;
+}
+
+
+#saltar a:focus{
+    position: static;
+    border: 3px solid black;
+    width: 50px;
+    height: 30px;
+}
+
+/* .row {
+    margin: 0 !important;
+    padding: 0 !important;
+} */
+
+.cuerpoCont{
+    max-width: 1920px;
+    padding: 0 30px;
+}
+
+.row {
+    margin-right: 0;
+    margin-left: 0;
+}
+
+.borde_inferior>.row{
+    border-bottom: 1px solid #ddd;
+}
+
+/* #menuLateral a {
+    display: block;
+} */
+
+#header {
+    /* max-width: 1270px !important; */
+    width: 100% !important;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+    color: #0c3054;
+}
+
+#imgPorDefecto img {
+    width: 100%;
+    height: auto;
+}
+
+.sidebar_0 ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+#menu-menu_1{
+    justify-content: center;
+}
+
+
+/*inicio estilos para el menu de navegación*/
+
+.menu-institucional {
+    background-color: #0f3d6a;
+    max-height: 74px;
+}
+
+.dropdown-menu {
+    background-color: #0c3054;
+    padding-bottom: 0;
+    padding-top: 0;
+}
+
+.dropdown-menu li > a{
+    color: white;
+}
+
+.dropdown-menu li > a:hover{
+    background-color: #e9ecef;
+    color: #212529;
+}
+
+.menu-estandar > li > a:focus{
+    color: white;
+}
+
+.boton:focus {
+    box-shadow: none;
+}
+
+.info{
+    padding-left: 0;
+}
+
+/*Estilos cuerpo*/
+
+.cuerpo {
+    /* background-color: #fff; */
+    margin: 0 0 0 0;
+}
+
+.breadcrumb {
+    background-color: #fff;
+    border-radius: 0;
+}
+
+.primer_contenedor{
+    margin-right: 1rem;
+}
+
+.menu_lateral_inicio {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    background: #FFFFFF;
+    cursor: pointer;
+}
+
+#infoRegistro li {
+    list-style: none;
+}
+
+#infoRegistro ul {
+    padding-left: 20px;
+}
+
+.titulobarralateral {
+    display: none;
+}
+
+/* #menu-menu-lateral,
+#menu-menu-lateral-1 {
+    padding: 0;
+    margin: 0;
+} */
+
+/* #menu-menu-lateral li a,
+#menu-menu-lateral-1 li a{
+    text-decoration: none;
+    color: #0f3d6a;
+} */
+
+.barralateralb>ul {
+    background-color: #F2F2F2;
+    padding: 0.5em 1em 0.5em 1em;
+}
+
+ul.menu_lateral {
+    list-style: none;
+    background-color: #F2F2F2;
+    padding: 0.5em 1em 0.5em 1em;
+    border-bottom: 5px solid #0c3054;
+    font-size: 14px;
+}
+
+.menu_lateral{
+    text-decoration: none;
+}
+
+/* ul#menu-menu-lateral>li,
+ul#menu-menu-lateral-1>li {
+    font-size: 0.929em;
+    border-bottom: 2px solid #D9D9D9;
+    padding: 10px 20px;
+    margin: 0 10px;
+    list-style: none;
+} */
+
+ul.sub-menu li {
+    list-style: none;
+    padding: 10px;
+}
+
+ul.sub-menu li:hover {
+    background-color: #F2F2F2;
+    border: 1px solid #fff;
+    transition: 1s;
+    border-radius: 3px;
+}
+
+/* .sidebarH {
+    list-style: none;
+    background-color: #F2F2F2;
+    border-bottom: 5px solid #0c3054;
+} */
+
+.sidebarH .input-group {
+    margin: 0 10px;
+}
+
+.menu_lateral_inicio {
+    padding-top: 0PX;
+}
+
+.menu-estandar > li > a {
+    color: #ffffff;
+    font-size: 14px;
+}
+
+.menu-estandar > li > a:hover{
+    color: white;
+    text-decoration: underline;
+}
+
+
+.menu-estandar > li {
+    padding-right: 16px;
+}
+
+.dropdown-menu > li:hover > .submenu{
+    display: block;
+    position: absolute;
+    left: 138px;
+    top: 8px;
+}
+
+.sidebar,
+.sidebar a {
+    color: #0f3d6a;
+    padding: 0PX !important;
+}
+
+.imagen-post img {
+    /* max-width: 100%; */
+    width: 100%; /* o auto, PENDIENTE */
+    height: auto;
+    /* min-width: 323px; */
+}
+
+.imagen-post {
+    text-align: center;
+}
+
+.contenidoNoticiasPost {
+    padding: 0 30PX 20px 30px !important;
+}
+
+.accordion-item {
+    background-color: #fff;
+    border: 1px solid rgba(0,0,0,.125);
+}
+
+.accordion-body {
+    border-bottom: 1px solid rgba(0, 0, 0, .125);
+}
+
+ul.accordion>li.accordion-item>ul>li:nth-child(odd) {
+    background-color: #F8F8F8;
+}
+
+.titulonoti {
+    background: -moz-linear-gradient(0deg, #19072D 1%, #721131 50%);
+    background: -webkit-linear-gradient(0deg, #19072D 1%, #721131 50%);
+    background: -o-linear-gradient(0deg, #19072D 1%, #721131 50%);
+    background: -ms-linear-gradient(0deg, #19072D 1%, #721131 50%);
+    background: linear-gradient(90deg, #19072D 1%, #721131 50%);
+    color: white;
+    margin: 0 0 20px 0;
+    padding-left: 15px;
+    text-align: start;
+    font-family: 'Oswald';
+}
+
+.titulonoti h2 {
+    margin-bottom: 0;
+}
+
+.middle-up {
+    padding: 1px 1px 1px 0;
+}
+
+.middle-down {
+    padding: 1px 0 1px 0px;
+}
+
+.enlace-boton {
+    color: white !important;
+    border-radius: 0;
+    padding: 2px 0 2px 0;
+    font-family: 'Myriad Pro Cond';
+}
+
+.center-block {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.post-title-new a {
+    font-size: 16pt;
+    color: #0c3054;
+    text-decoration: none;
+}
+
+.post-content {
+    padding: 0 10px;
+}
+
+.tagsCompart {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px 20px 10px 20px;
+}
+
+.first{
+    background-color: #F8F8F8;
+}
+
+.tags a,
+.compart a {
+    color: #0c3054 !important;
+    text-decoration: none;
+}
+
+.publicacion a {
+    color: #870602;
+}
+
+.publicacion {
+    text-align: right;
+    font-size: 10pt;
+    padding: 15px;
+    color: #595959;
+}
+
+.paginacion {
+    margin: 15px !important;
+}
+
+.paginacion a {
+    color: #fff;
+    border: 1px solid #0c3054;
+    border-radius: 5px;
+    margin: 0px 2px;
+    background-color: #0c3054;
+    text-decoration: none;
+    width: auto;
+}
+
+.paginacion .current{
+    width: auto;
+}
+
+.paginacion a:hover {
+    background-color: #870602;
+    transition: 1s;
+}
+
+#breadcrumbs {
+    padding: 10px 25px;
+}
+
+#breadcrumbs a {
+    color: #0c3054;
+}
+
+.imagen-post-thumbnail img {
+    width: 100%;
+}
+
+.tituloPost {
+    background-color: #F2F2F2;
+    padding: 0.2em 1em;
+    margin: 0 0 20px 0;
+    text-align: center;
+    font-family: 'Myriad Pro Cond';
+    font-size: 30pt;
+}
+
+.tituloPost a {
+    color: #002b4d;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+p.has-background {
+    margin: 0;
+    padding: 10px 0;
+    -webkit-box-shadow: inset 0px 0px 15px 0px rgba(97, 97, 97, 0.2);
+    -moz-box-shadow: inset 0px 0px 15px 0px rgba(97, 97, 97, 0.2);
+    box-shadow: inset 0px 0px 15px 0px rgba(97, 97, 97, 0.2);
+}
+
+.post-content img {
+    height: auto;
+}
+
+
+/*First level item arrows*/
+.wp-block-embed__wrapper {
+    text-align: center;
+}
+
+.post-content a {
+    color: #0f3d6a;
+}
+
+.post-contentOrganigrama img {
+    width: 100%;
+}
+
+img[usemap="#mapa"] {
+    width: 100%;
+}
+
+.error404 {
+    font-size: 30pt;
+    color: #870602;
+    text-align: center;
+    margin-top: 10%;
+}
+
+.contacto404 {
+    text-align: center;
+}
+
+.contacto404 p {
+    margin: 0;
+    padding: 0;
+}
+
+.contacto404 form {
+    width: 50%;
+    margin: 30px auto 0 auto;
+    box-shadow: -webkit-box-shadow: 0px 0px 5px 1px rgb(0, 0, 0, 0.1);
+    -moz-box-shadow: 0px 0px 5px 1px rgb(0, 0, 0, 0.1);
+    box-shadow: 0px 0px 5px 1px rgb(0, 0, 0, 0.1);
+}
+
+.contacto404 input,
+.contacto404 textarea {
+    width: 100%;
+    border: 1px solid #929292;
+}
+
+#enviar {
+    width: 30%;
+}
+
+#enviar input {
+    background-color: #0f3d6a;
+    border: 2px solid #0f3d6a;
+    border-radius: 5px;
+    width: 100%;
+    color: #fff;
+}
+
+#enviar input:hover {
+    background-color: #870602;
+    border: 2px solid #fff;
+    transition: 1s;
+}
+
+div.wpcf7-response-output {
+    margin: 0;
+}
+
+div.wpcf7-validation-errors,
+div.wpcf7-acceptance-missing {
+    border: 2px solid #fff;
+    background-color: #870620;
+    border-radius: 5px;
+    transition: 1s;
+    color: #fff;
+}
+
+/* Estilo pendiente a quitar */
+
+iframe {
+    /* position: absolute; */
+    /* top: 0;
+    left: 0; */
+    width: 100%;
+    height: 100%;
+}
+
+
+li.widget {
+    list-style: none;
+}
+
+.mejs-container,
+.mejs-container .mejs-controls,
+.mejs-embed,
+.mejs-embed body {
+    background-color: transparent !important;
+}
+
+.formulario {
+    text-align: center;
+}
+
+.wpcf7-submit {
+    padding: 10px 20px;
+    background-color: #0f3d6a;
+    border: 1px solid #0f3d6a;
+    border-radius: 6px;
+    color: white;
+}
+
+@media(max-width: 991px) {
+}
+
+@media (min-width: 992px) {
+}
+
+@media (max-width: 549px) {
+}
+
+
+@media (min-width: 375px) and (max-width: 550px) {
+}
+
+@media (min-width: 550px) and (max-width:768px) {
+}
+
+@media (min-width:768px) and (max-width: 991px) {
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+}
+
+@media (min-width:1200px) {
+}

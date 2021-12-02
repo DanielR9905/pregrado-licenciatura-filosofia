@@ -1,0 +1,163 @@
+.tituloSup,
+.tituloSitio {
+    font-family: 'Myriad Pro Cond';
+    color: white;
+    font-size: 16pt;
+}
+
+.tituloIup {
+    font-family: 'Myriad Pro Cond';
+    line-height: 1;
+    padding-top: 3px;
+    color: white;
+    text-transform: capitalize;
+}
+
+.logo-titulo{
+    margin: 5px 0;
+}
+
+.bannerSuperior {
+    height: 90px;
+    width: 85%;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 5px 0 5px 0;
+}
+
+.bannerSuperior a {
+    color: #ffffff;
+    text-decoration: none;
+}
+.menu-top-center{
+    justify-content: center;
+}   
+.row_cabecera {
+    background-color: #721131;
+}
+.menu-estandar li{
+    padding-right: 0;
+}
+.logo {
+    max-width: 100%;
+    max-height: 64px;
+    padding-right: 5px;
+}
+
+.logos-top{
+    height: 90px;
+}
+
+.logo2 {
+    max-width: 100%;
+    max-height: 64px;
+}
+
+.titulo{
+    padding: 5px 0;
+    /* border-right: 1px solid white; */
+}
+.vl {
+    height: 48px;
+    border-right: 2px solid white;
+    width: 2px;
+    /* position: absolute; */
+    padding: 0 2px;
+}
+
+.subrayado{
+    text-decoration: none;
+}
+
+.imagen-banner{
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+.imgPorDefecto img {
+    width: 100%;
+    height: auto;
+}
+
+.menu > li > a:hover {
+    text-decoration: underline;
+}
+
+/*First level item arrows*/
+
+
+@media (min-width: 375px) and (max-width: 575px) {
+    .logo{
+        height: 50px;
+        border-right: none;
+    }
+    .text-end{
+        text-align: center!important;
+    }
+}
+
+@media (min-width: 576px) {
+    .logo{
+        height: 54px;
+    }
+}
+
+@media (min-width:768px) and (max-width: 991px) {
+    /* .logo{
+        height: 54px;
+    } */
+    .vl {
+        padding: 0;
+    }
+    section.logo-ministerio{
+        padding-right: 0;
+    }
+    .logo2 {
+        max-width: 72%;
+    }
+    
+    @media (min-width: 850px) {
+        /* .tituloSup{
+            padding-left: 12px ;
+        } */
+    }
+}
+
+@media (min-width: 992px) {
+    .row_cabecera{
+        padding:0 12px;
+    }
+    .logo2 {
+        max-width: 90%;
+    }
+}
+
+
+@media (min-width:1200px) {
+    .container-menu-superior{
+        padding-left: 0;
+        
+    }
+    .logo-titulo{
+        padding-right: 0;
+    }
+    section.menu-institucional li > a {
+        padding-right: 16px;
+        padding-left: 16px;
+    } 
+    .menu-top-center{
+        justify-content: space-between;
+    }
+    .logo2 {
+        max-width: 100%;
+    }
+
+}
+
+@media (min-width:1400px) {
+
+    /* .menu-top-center{
+        justify-content: center;
+    } */
+
+}

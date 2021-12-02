@@ -1,0 +1,96 @@
+#menuInferior {
+    text-align: center;
+    border: 7px solid #fff;
+    -webkit-box-shadow: inset 1px 1px 1px 1px rgba(0, 0, 0, 0.10);
+    -moz-box-shadow: inset 1px 1px 1px 1px rgba(0, 0, 0, 0.10);
+    box-shadow: inset 1px 1px 1px 1px rgba(0, 0, 0, 0.10);
+}
+
+#menuInferior ul {
+    display: inline-flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.anclaInferior {
+    position: fixed;
+    z-index: 1000;
+    bottom: 2%;
+    left: 2%;
+}
+
+
+/* fin estilos que dan efecto 3d a los div donde estan las rede sociales*/
+
+.footer-main {
+    background-color: #BCBDC0;
+    color: #313030;
+    padding: 20px;
+}
+
+
+footer p {
+    margin: 0;
+}
+
+.footer-main p {
+    font-size: 14px;
+}
+
+/* .row-redes {
+    padding: 15px !important;
+    text-align: right;
+} */
+
+.footer-main__title {
+    padding-left: 0;
+    font-size: 1.2rem;
+    margin-bottom: 0;
+}
+
+.footer-main a {
+    text-decoration: none;
+    color: #003f6a;
+}
+
+b, strong {
+    font-weight: 700;
+}
+
+.informacion-contacto,
+.informacion-institucional {
+    padding: 30px;
+}
+
+@media (min-width: 992px) {
+    #menuInferior ul>li:before {
+        padding-left: 5px;
+        padding-right: 5px;
+        font-size: 18px;
+        content: "|";
+        color: #0f3d6a;
+    }
+    #menuInferior ul>li:last-child:after {
+        padding-left: 5px;
+        padding-right: 5px;
+        font-size: 18px;
+        content: "|";
+        color: #0f3d6a;
+    }
+}
+
+@media (max-width: 992px) {
+    #menuInferior ul {
+        display: block;
+    }
+    #menuInferior li {
+        border: 3px solid #fff;
+        -webkit-box-shadow: inset 0px 1px 3px 0px rgba(0, 0, 0, 0.23);
+        -moz-box-shadow: inset 0px 1px 3px 0px rgba(0, 0, 0, 0.23);
+        box-shadow: inset 0px 1px 3px 0px rgba(0, 0, 0, 0.23);
+    }
+    .informacion-contacto {
+        text-align: center;
+    }
+}
